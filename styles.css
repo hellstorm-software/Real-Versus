@@ -1,0 +1,211 @@
+body {
+    background-color: #333; /* Dark gray background */
+    color: #ccc; /* Light gray text */
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+	height: 400px;
+    padding: 20px;
+    border: 2px solid #666; /* Gray border to mimic old website style */
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff6666; /* Light red to stand out */
+    text-shadow: 2px 2px 5px #000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ff00; /* Bright green links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#content {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #999;
+}
+
+.info-bar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.info-bar p {
+    margin: 0;
+	font-family: 'Courier New', monospace;
+	font-size: 14px;
+}
+
+.info-bar a {
+    margin: 0;
+	font-family: 'Courier New', monospace;
+	font-size: 14px;
+	color: rgba(270, 270, 270, 0.8);
+	text-decoration: none;
+}
+
+.info-bar a:hover {
+	text-decoration: underline;
+	margin-bottom: -15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.image-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 2px solid #444; /* Slight border for the images */
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    color: #fff; /* White text for visibility */
+    display: none;
+    text-shadow: 2px 2px 5px #000; /* Add a shadow for better readability */
+}
+
+#label-right {
+    text-align: right;
+    margin-right: 80%; 
+	padding-left: 70px;
+}
+
+#nextButton {
+    display: none; /* Initially hide the button */
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  margin-left: 47%;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-90:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.button-90 {
+  --b: 3px;   /* border thickness */
+  --s: .85em; /* size of the corner */
+  --color: #555b69;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  margin-left: 47%;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-90:hover,
+.button-90:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-90:active {
+  background: var(--color);
+  color: #fff;
+}

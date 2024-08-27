@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real vs AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<p>.</p>
+    <div class="container">
+        <div class="image-container" id="image-left">
+            <div class="label" id="label-left"></div>
+            <img src="media/png/content/image1.jpg" alt="Left Image" onclick="revealLabelsAndButton()">
+        </div>
+        <div class="image-container" id="image-right">
+            <div class="label" id="label-right"></div>
+            <img src="media/png/content/image2.jpg" style="margin-left: 60%;" alt="Right Image" onclick="revealLabelsAndButton()">
+        </div>
+    </div>
+	
+	<p>This is the tutorial level! Click on the image you think is the REAL ONE.</p>
+
+		<button class="button-89" role="button" id="nextButton" onclick="redirectToRandomPage()">NEXT.</button>
+
+    <script>
+        function revealLabelsAndButton() {
+            document.getElementById('label-left').textContent = 'REAL';
+            document.getElementById('label-left').style.display = 'block';
+            
+            document.getElementById('label-right').textContent = 'AI';
+            document.getElementById('label-right').style.display = 'block';
+
+            document.getElementById('nextButton').style.display = 'block';
+        }
+
+        function redirectToRandomPage() {
+            const randomPageNumber = Math.floor(Math.random() * 10) + 1;
+            const randomPage = `rva${randomPageNumber}.html`;
+            window.location.href = randomPage;
+        }
+    </script>
+	
+</body>
+</html>
